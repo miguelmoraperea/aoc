@@ -28,7 +28,7 @@ class TestPart2(unittest.TestCase):
 
 
 def _get_large_data():
-    with open('large_input') as file:
+    with open('input') as file:
         lines = file.readlines()
     data = [int(line) for line in lines]
     return data
