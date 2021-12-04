@@ -11,7 +11,7 @@ class TestPart1(unittest.TestCase):
         self.assertEqual(7, sonar.get_increase_count())
 
     def test_large_input(self):
-        sonar = Sonar(_get_large_data())
+        sonar = Sonar(read_input())
         print(sonar.get_increase_count())
 
 
@@ -23,11 +23,11 @@ class TestPart2(unittest.TestCase):
         self.assertEqual(5, sonar.get_three_measurement_increase_count())
 
     def test_large_input(self):
-        sonar = Sonar(_get_large_data())
+        sonar = Sonar(read_input())
         print(sonar.get_three_measurement_increase_count())
 
 
-def _get_large_data():
+def read_input():
     with open('input') as file:
         lines = file.readlines()
     data = [int(line) for line in lines]

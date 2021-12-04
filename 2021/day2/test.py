@@ -35,5 +35,6 @@ class TestPart2(unittest.TestCase):
 
 def read_input():
     with open('input') as file:
-        lines = file.read()
-    return lines
+        lines = file.readlines()
+    data = [int(line) for line in lines]
+    return data
