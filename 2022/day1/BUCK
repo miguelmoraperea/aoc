@@ -1,0 +1,6 @@
+cxx_binary(
+  name = 'day_1',
+  srcs = [
+    ('part_1.cpp', ['-std=c++17']),
+ ],
+)
